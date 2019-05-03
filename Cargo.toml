@@ -5,11 +5,4 @@ authors = ["Colin Finck <colin.finck@rwth-aachen.de>"]
 license = "MIT"
 
 [dependencies]
-core = { path = '../../../libcore', optional = true }
-compiler_builtins = { version = '0.1', optional = true }
-bitflags = { path = '../bitflags' }
-
-[features]
-default = []
-example_generated = []
-rustc-dep-of-std = ['core', 'compiler_builtins/rustc-dep-of-std', 'bitflags/rustc-dep-of-std']
+bitflags = "1.0.5"
